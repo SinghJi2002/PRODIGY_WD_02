@@ -1,0 +1,52 @@
+*{
+    background-color: black;
+}
+.navbar-title{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: white;
+}
+.timer{
+    color: white;
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 60px;
+}
+.hour{
+    padding: 20px 20px;
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+}
+.min{
+    padding: 20px 20px;
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+}
+.sec{
+    padding: 20px 20px;
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+}
+.button{
+    text-align: center;
+}
+.button button{
+    color: rgb(82, 82, 82);
+    border: none;
+    font-size: 20px;
+}
+.button button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+.lap-log-title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.lap-log{
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
