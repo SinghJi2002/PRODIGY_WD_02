@@ -1,52 +1,132 @@
-*{
+* {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navbar-title{
+
+.navbar-title {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
     color: white;
+    padding: 10px 0;
 }
-.timer{
+
+.timer {
     color: white;
     text-align: center;
-    padding: 100px 0px;
+    padding: 50px 0;
     font-size: 60px;
 }
-.hour{
-    padding: 20px 20px;
-    border-radius: 30px;
+
+/* Styling for time display */
+.hour, .min, .sec {
+    padding: 15px 20px;
+    border-radius: 20px;
     background-color: rgb(35, 35, 35);
+    display: inline-block;
 }
-.min{
-    padding: 20px 20px;
-    border-radius: 30px;
-    background-color: rgb(35, 35, 35);
-}
-.sec{
-    padding: 20px 20px;
-    border-radius: 30px;
-    background-color: rgb(35, 35, 35);
-}
-.button{
+
+/* Centering buttons */
+.button {
     text-align: center;
+    margin: 20px 0;
 }
-.button button{
+
+.button button {
     color: rgb(82, 82, 82);
     border: none;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.3s;
 }
-.button button:hover{
+
+.button button:hover {
     cursor: pointer;
     opacity: 0.8;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
 }
-.lap-log-title{
+
+/* Lap Log */
+.lap-log-title {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
+    margin-top: 20px;
 }
-.lap-log{
+
+.lap-log {
     color: rgb(82, 82, 82);
     text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Making the page responsive */
+@media (max-width: 768px) {
+    .navbar-title {
+        font-size: 30px;
+    }
+
+    .timer {
+        font-size: 40px;
+    }
+
+    .hour, .min, .sec {
+        padding: 10px 15px;
+        font-size: 30px;
+    }
+
+    .button button {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin: 4px;
+    }
+
+    .lap-log-title {
+        font-size: 20px;
+    }
+
+    .lap-log {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-title {
+        font-size: 24px;
+    }
+
+    .timer {
+        font-size: 30px;
+    }
+
+    .hour, .min, .sec {
+        padding: 8px 12px;
+        font-size: 24px;
+    }
+
+    .button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button button {
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 3px;
+    }
+
+    .lap-log-title {
+        font-size: 18px;
+    }
+
+    .lap-log {
+        font-size: 14px;
+    }
 }
